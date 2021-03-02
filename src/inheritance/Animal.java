@@ -52,14 +52,20 @@ class Fish extends Animal {
     public void movement() {
         System.out.println("Just keep swimming :P");
     }
+
+    @Override
+    public void sound() {
+        super.sound();
+        System.out.println("nemo nemo");
+    }
 }
 
 
 class main {
     public static void main(String[] args) {
-        Animal animal = new Animal();
-        animal.setName("anni");
-        animal.getName();
+//        Animal animal = new Animal();
+//        animal.setName("anni");
+//        animal.getName();
 
 
         Dog labrador = new Dog();
@@ -70,12 +76,14 @@ class main {
         labrador.getName();
         labrador.sound();
 
+        Fish nemo = new Fish();
+        nemo.sound();
+//
+//
+//        Cat fluffyCat = new Cat();
+//        fluffyCat.sound();
 
-        Cat fluffyCat = new Cat();
-        fluffyCat.sound();
-
-        Animal xyz = new Dog();
-        xyz.sound();
-        // xyz.run();
+        Animal pug = new Dog();
+        pug.sound();
     }
 }

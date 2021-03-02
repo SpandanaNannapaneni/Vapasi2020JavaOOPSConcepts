@@ -3,11 +3,11 @@ package inheritance;
 class Student{
     int rollNumber;
     String name;
-    public void setStudentData(int rollNumber, String name){
-        rollNumber = rollNumber;
-        name= name;
+    public void getStudentData(int rollNumber, String name){
+        this.rollNumber = rollNumber;
+        this.name= name;
     }
-    public void showStudentData(){
+    public void setStudentData(){
         System.out.println("Roll Number :" +rollNumber);
         System.out.println("Name :" + name);
     }
@@ -20,11 +20,11 @@ class Student1 extends Student{
 public class ThisOperator {
     public static void main(String[] args) {
         Student student = new Student();
-        student.setStudentData(1,"Sam");
-        student.showStudentData();
+        student.getStudentData(1,"Sam");
+        student.setStudentData();
 
-        Student1 s = new Student1();
-        s.setStudentData(2,"SPD");
-        s.showStudentData();
+//        Student1 s = new Student1();
+//        s.getStudentData(2,"SPD");
+//        s.setStudentData();
     }
 }

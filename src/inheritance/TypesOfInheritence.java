@@ -17,6 +17,13 @@ class MotarVehicles extends Vehicle {
     }
 }
 
+class RailedVehicles extends Vehicle{
+    String powerType;
+    public void rails(){
+        System.out.println("Runs on Tracks/Rails");
+    }
+}
+
 class Car extends MotarVehicles {
      String model;
      public void mileage(int numberOfKilometersPerLiter){
@@ -27,17 +34,13 @@ class Car extends MotarVehicles {
 
 
 //Hierarchical Inheritance
-class RailedVehicles extends Vehicle{
-    String powerType;
-    public void rails(){
-        System.out.println("Runs on Tracks/Rails");
-    }
-}
 
-//Multiple Inheritance :.................Explanation
+
+//Multiple Inheritance :.................
 
 public class TypesOfInheritence {
     public static void main(String[] args) {
 
     }
 }
+

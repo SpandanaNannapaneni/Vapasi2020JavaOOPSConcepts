@@ -18,6 +18,7 @@ public class SuperOperator {
         B b = new B();
         System.out.println(b.sum());
 
+
         Black black = new Black();
         black.showColourCode();
     }
