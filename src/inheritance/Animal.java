@@ -13,11 +13,9 @@ public class Animal {
     }
 
     public void movement() {
-
+        System.out.println("Animal movement");
     }
-    public void poop(){
 
-    }
     private String name;
 
     public void setName(String name) {
@@ -37,7 +35,7 @@ class Dog extends Animal {
         System.out.println("Bark!! Bark!!!");
     }
 
-    public void run(){
+    public void run() {
         System.out.println("I run fast");
     }
 }
@@ -78,6 +76,6 @@ class main {
 
         Animal xyz = new Dog();
         xyz.sound();
-       // xyz.run();
+        // xyz.run();
     }
 }

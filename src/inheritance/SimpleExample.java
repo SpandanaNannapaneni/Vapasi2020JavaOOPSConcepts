@@ -26,11 +26,11 @@ public class SimpleExample {
         fruit.type("(fruit type will be mentioned here)");
 
         Orange orange = new Orange(); // instantiating child class
-        orange.color = "Amber"; //variable in parent class
+        orange.color = "Orange"; //variable in parent class
         orange.type("citrus"); //method in parent class
         orange.shape("round"); //method in child class
 
-        Fruit fruit1 = new Orange();
+        Fruit fruit1 = new Orange();// instantiating child object with parent reference
         fruit1.color = "red";
         fruit1.type("oval");
     }
